@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    height: 275px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px;
+}
+
+.navbar-logo {
+    color: #36369E;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 75px;
+    display: flex;
+    align-items: Left;
+    font-family: 'JetBrains Mono', monospace;
+    max-width: 480;
+}
+
+.fa-fish {
+    margin-left: 0.5;
+}
+
+.nav-items {
+    justify-self: start;
+}
