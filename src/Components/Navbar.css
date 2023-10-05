@@ -1,10 +1,11 @@
+/*
 .navbar {
     display: flex;
     height: 275px;
     justify-content: center;
     align-items: center;
     position: sticky;
-    top: 0;
+    top: 0px;
     z-index: 1000;
 }
 
@@ -12,7 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 275px;
+    width: 100%;
     max-width: 1500px;
 }
 
@@ -30,9 +32,55 @@
 }
 
 .fa-fish {
-    margin-left: 0.5;
+    margin-left: 5px;
 }
 
 .nav-items {
     justify-self: start;
+}
+*/
+.button-1 {
+    font-family: 'Jacques Francois', serif;
+    background-color: #36369E;
+    color: #F7F7EF;
+    font-size: 40px;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: sticky;
+}
+
+.navbar-logo {
+    color: #36369E;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 75px;
+}
+
+.nav-links{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 40px;
+    color: #060649;
+    text-decoration: none;
+    padding: 20px;
+    max-width: 200px;
+    
+}
+
+.nav-items {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+
 }

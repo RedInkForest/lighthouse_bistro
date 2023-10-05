@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -6,27 +6,26 @@ function Navbar() {
     return (
         <>
             <nav className='navbar'>
-                <div className='navbar-container'>
-                    <Link to="/" classname='navbar-logo'>
-                        Lighthouse Bistro
-                        <i class="fa-solid fa-fish"></i>
+                <Link to="/" className='navbar-logo'>
+                    Lighthouse Bistro <i class="fa-solid fa-fish"></i>
+                </Link>
+
+                <li className='nav-items'>
+                    <Link to="/" className='nav-links'>
+                        Home
                     </Link>
-                    <li className='nav-item'>
-                        <Link to="/" className='nav-links'>
-                            Home
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="/menu" className='nav-links'>
-                            Menu
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="/hours" className='nav-links'>
-                            Hours & Location
-                        </Link>
-                    </li>
-                </div>
+                    <Link to="/menu"
+                        className='nav-links'>
+                        Menu
+                    </Link>
+                    <Link to="/about" className='nav-links'>
+                        About
+                    </Link>
+                </li>
+
+                <button className='button-1'>
+                    Reservations
+                </button>
             </nav>
         </>
     )

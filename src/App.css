@@ -1,13 +1,3 @@
-
-.Text-reg {
-  font-family: 'JetBrains Mono', monospace;
-  color: #060649;
-  font-size: 40px;
+.app {
+  background-color: #F7F7EF;
 }
-
-.Text-fancy {
-  font-family: 'Jacques Francois', serif;
-  color: white;
-  font-size: 40px;
-}
-
