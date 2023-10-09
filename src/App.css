@@ -1,3 +1,11 @@
 .app {
   background-color: #F7F7EF;
 }
+
+.divider {
+  border-top: 5px solid #060649;
+  max-width: 95%;
+  margin: auto;
+}
+
+

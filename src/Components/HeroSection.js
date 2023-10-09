@@ -1,9 +1,10 @@
-import React from 'react'
-import "./HeroSection.css"
-import img from './Images/img_home.jpg'
+import React from 'react';
+import "./HeroSection.css";
+import img from './Images/img_home.jpg';
+
 function HeroSection() {
   return (
-    <>
+    <div id='hero'>
       <div className='container'>
         <div className='about'>
             <h1 className='title'>About</h1>
@@ -18,7 +19,7 @@ function HeroSection() {
         <img className='home_image' src={img}/>
       
       </div>
-    </>
+    </div>
   )
 }
 

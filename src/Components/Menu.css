@@ -1,0 +1,8 @@
+.entree{
+    flex-direction: row;
+    
+}
+
+.menu {
+    flex-direction: column;
+}
