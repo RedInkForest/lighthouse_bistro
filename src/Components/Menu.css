@@ -1,8 +1,19 @@
-.entree{
+.entree, .mains, .dessert{
+    display: flex;
     flex-direction: row;
-    
+    justify-content: space-around;
+    padding: 20px;   
 }
 
+h1 {
+    text-align: center;
+}
+
+li {
+    text-align: center;
+
+}
 .menu {
+    display: flex;
     flex-direction: column;
 }
