@@ -1,9 +1,14 @@
 .container {
     display: flex;
     justify-content: space-around;
+    padding: 100;
 }
 h1 {
     text-align: center;
+}
+h2 {
+    text-align: center;
+    font-size: large;
 }
 .mapDiv{
     height: 500px;

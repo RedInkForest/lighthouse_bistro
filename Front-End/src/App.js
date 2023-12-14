@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import HeroSection from './Components/HeroSection';
 import Menu from './Components/Menu'
 import About from './Components/About'
+import Contact from './Components/Contact';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <HeroSection/>
       <Menu/>
       <About/>
+      <div className='divider'></div>
+      <Contact/>
     </div>
   );
 }
