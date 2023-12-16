@@ -27,11 +27,12 @@ function About() {
   return (
     <div className="container">
       <div className="text">
-        <h1>HOURS</h1>
+        <h1 className="InfoHeader">HOURS</h1>
         <p>Monday-Friday 11:00 AM - 9:00 PM</p>
         <p>Saturday- Sunday Noon - 9:00 PM</p>
-        <h2>LOCATION</h2>
+        <h1 className="InfoHeader">LOCATION</h1>
         <p>10 Bayfront Ave, Singapore 018956</p>
+        <p>Phone Number: 505-503-4455</p>
       </div>
 
       <div ref={mapElement} className="mapDiv"/>
