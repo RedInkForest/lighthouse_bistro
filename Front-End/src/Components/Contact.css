@@ -8,5 +8,11 @@
 .icon {
     padding: 25px;
     color: #36369E;
-    size: 1000px;
+}
+
+
+.social {
+    text-align: center;
+    font-size: small;
+    color:#36369E;
 }

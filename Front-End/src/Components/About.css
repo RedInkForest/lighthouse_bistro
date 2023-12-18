@@ -6,10 +6,19 @@
 
 .InfoHeader {
     text-align: center;
+    padding: 0%;
 }
 
 .mapDiv{
-    height: 500px;
     width: 50%;
     visibility: visible;
+}
+
+.about_text {
+    width: 50%;
+    color: #36369E;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 30px;
+    padding-left: 30px;
+    text-align: center;
 }

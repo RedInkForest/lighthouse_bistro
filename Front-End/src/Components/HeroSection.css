@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-height: 900px;
 }
 
 .about {
@@ -31,6 +32,7 @@
     color: #36369E;
     font-family: 'JetBrains Mono', monospace;
     font-size: 30px;
+    padding-left: 25px;
 }
 
 .home_image {
@@ -41,3 +43,9 @@
     right: 0;
     margin-top: 125px;
 }
+
+.bar {
+    border-top: 100px solid #060649;
+    max-width: 95%;
+    margin: auto;
+  }

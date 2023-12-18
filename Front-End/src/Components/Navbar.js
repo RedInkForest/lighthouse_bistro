@@ -4,7 +4,7 @@ import './Navbar.css';
 
 function Navbar() {
     return (
-        <div>
+        <div className='navbar_container'>
             <nav className='navbar'>
                 <Link to="/" className='navbar-logo'>
                     Lighthouse Bistro <i class="fa-solid fa-fish"></i>

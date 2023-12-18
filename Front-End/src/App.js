@@ -12,6 +12,7 @@ function App() {
       <div className='divider'></div>
       <HeroSection/>
       <Menu/>
+      <div className='divider'></div>
       <About/>
       <div className='divider'></div>
       <Contact/>

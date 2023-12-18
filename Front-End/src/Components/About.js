@@ -26,7 +26,7 @@ function About() {
   
   return (
     <div className="container" id="hours">
-      <div className="text">
+      <div className="about_text">
         <h1 className="InfoHeader">HOURS</h1>
         <p>Monday-Friday 11:00 AM - 9:00 PM</p>
         <p>Saturday- Sunday Noon - 9:00 PM</p>
