@@ -4,7 +4,7 @@ import './Navbar.css';
 
 function Navbar() {
     return (
-        <>
+        <div>
             <nav className='navbar'>
                 <Link to="/" className='navbar-logo'>
                     Lighthouse Bistro <i class="fa-solid fa-fish"></i>
@@ -19,17 +19,19 @@ function Navbar() {
                         className='nav-links'>
                         Menu
                     </Link>
-                    <Link to="about" spy={true} smooth={true} offset={50} duration={500}
+                    <Link to="hours" spy={true} smooth={true} offset={50} duration={500}
                     className='nav-links'>
-                        About
+                        Info
                     </Link>
                 </li>
 
-                <button className='button-1'>
-                    Reservations
-                </button>
+                <div className='hate'>
+                    <button className='button-1'>
+                        Reservations
+                    </button>
+                </div>
             </nav>
-        </>
+        </div>
     )
 }
 

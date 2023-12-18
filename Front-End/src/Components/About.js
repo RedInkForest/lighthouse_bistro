@@ -25,7 +25,7 @@ function About() {
   }, []);
   
   return (
-    <div className="container">
+    <div className="container" id="hours">
       <div className="text">
         <h1 className="InfoHeader">HOURS</h1>
         <p>Monday-Friday 11:00 AM - 9:00 PM</p>
