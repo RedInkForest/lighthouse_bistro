@@ -1,5 +1,6 @@
 import mysql.connector
 from fastapi import FastAPI
+from pydantic import BaseModel
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -31,15 +32,34 @@ time_minutes - time of day given in minutes
 party_size - party size of reservation
 
 '''
+class Info(BaseModel):
+    name: str
+    month: int
+    day: int 
+    time: int
+    party: int
 
 
 #GET - reservations for a day
+@app.get('/res_for_day/{month}/{day}')
+def res_for_day(month: int, day:int):
+    sql = "SELECT * FROM res WHERE date_month = %s AND date_day = %s"
+    val = (month, day)
+    cursor.execute(sql,val)
+    return cursor.fetchall()
 
 
 #POST - add reservation to database
+@app.post('/make/')
+def make(info: Info):
+    sql = "INSERT INTO res VALUES (%s, %s, %s, %s, %s)"
+    val = (info.name, info.month, info.day, info.time, info.party)
+    cursor.execute(sql, val)
 
 
 #DELETE - delete reservation
-
+@app.delete('/cancel/')
+def cancel(info: Info):
+    sql = "SELECT * FROM res WHERE date_month = {month} AND date_day = {day}"
 
 #PUT - update reservation information (party size, timing)
