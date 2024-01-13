@@ -55,11 +55,15 @@ def make(info: Info):
     sql = "INSERT INTO res VALUES (%s, %s, %s, %s, %s)"
     val = (info.name, info.month, info.day, info.time, info.party)
     cursor.execute(sql, val)
+    db.commit()
 
 
 #DELETE - delete reservation
-@app.delete('/cancel/')
-def cancel(info: Info):
-    sql = "SELECT * FROM res WHERE date_month = {month} AND date_day = {day}"
+@app.delete('/cancel/{month}/{day}/{name}')
+def cancel(month: int, day:int, name:str):
+    sql = "DELETE FROM res WHERE date_month = %s AND date_day = %s AND name = %s"
+    val = (month, day, name)
+    cursor.execute(sql,val)
+    db.commit()
 
 #PUT - update reservation information (party size, timing)
