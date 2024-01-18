@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import './Navbar.css';
+import Modal from './Modal';
 
 function Navbar() {
     return (
@@ -26,9 +27,7 @@ function Navbar() {
                 </li>
 
                 <div className='hate'>
-                    <button className='button-1'>
-                        Reservations
-                    </button>
+                    <Modal></Modal>
                 </div>
             </nav>
         </div>
